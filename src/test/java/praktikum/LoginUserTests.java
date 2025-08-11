@@ -1,5 +1,6 @@
 package praktikum;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -33,6 +34,7 @@ public class LoginUserTests extends BaseTest {
 
     // Вход под существующим пользователем
     @Test
+    @DisplayName("Вход под существующим пользователем")
     public void shouldLoginExistingUserTest() {
         userSteps
                 .createUser(user);
@@ -43,8 +45,8 @@ public class LoginUserTests extends BaseTest {
                 .body("refreshToken", Matchers.notNullValue());
     }
 
-    // Вход с неверным email
     @Test
+    @DisplayName("Вход с неверным email")
     public void shouldNotLoginUserWithWrongEmailTest() {
         userSteps
                 .createUser(user);
@@ -58,8 +60,8 @@ public class LoginUserTests extends BaseTest {
                 .body("message", Matchers.equalTo("email or password are incorrect"));
     }
 
-    // Вход с неверным паролем
     @Test
+    @DisplayName("Вход с неверным паролем")
     public void shouldNotLoginWithWrongPasswordTest() {
         userSteps
                 .createUser(user);

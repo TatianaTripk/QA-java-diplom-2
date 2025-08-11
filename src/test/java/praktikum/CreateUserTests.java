@@ -1,5 +1,6 @@
 package praktikum;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -31,8 +32,8 @@ public class CreateUserTests extends BaseTest {
         isUserCreated = false;
     }
 
-    // Создание уникального пользователя
     @Test
+    @DisplayName("Создание уникального пользователя")
     public void shouldCreateNewUserTest() {
         userSteps
                 .createUser(user)
@@ -41,8 +42,8 @@ public class CreateUserTests extends BaseTest {
         isUserCreated = true;
     }
 
-    //Создание пользователя, который уже зарегистрирован
     @Test
+    @DisplayName("Создание пользователя, который уже зарегистрирован")
     public void shouldNotCreateDuplicateUserTest() {
         userSteps
                 .createUser(user);
@@ -54,8 +55,8 @@ public class CreateUserTests extends BaseTest {
         isUserCreated = false;
     }
 
-    // Создание пользователя без одного из обязательных полей (без email)
     @Test
+    @DisplayName("Создание пользователя без одного из обязательных полей (без email)")
     public void shouldNotCreateUserWithoutEmailTest() {
         user.setEmail(null);
         userSteps
@@ -66,8 +67,8 @@ public class CreateUserTests extends BaseTest {
         isUserCreated = false;
     }
 
-    // Создание пользователя без одного из обязательных полей (без password)
     @Test
+    @DisplayName("Создание пользователя без одного из обязательных полей (без password)")
     public void shouldNotCreateUserWithoutPasswordTest() {
         user.setPassword(null);
         userSteps
