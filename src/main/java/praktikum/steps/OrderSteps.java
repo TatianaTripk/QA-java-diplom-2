@@ -1,5 +1,6 @@
 package praktikum.steps;
 
+import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import praktikum.config.RestConfig;
 import praktikum.model.Order;
@@ -12,6 +13,7 @@ import static io.restassured.RestAssured.given;
 public class OrderSteps {
     private static final Random random = new Random();
 
+    @Step
     public ValidatableResponse createOrder(Order order) {
         return given()
                 .body(order)
@@ -20,6 +22,7 @@ public class OrderSteps {
                 .then();
     }
 
+    @Step
     public String[] getRandomIngredientIds(int maxCount) {
         List<String> allIngredients = given()
                 .get(RestConfig.GET_INGREDIENTS)

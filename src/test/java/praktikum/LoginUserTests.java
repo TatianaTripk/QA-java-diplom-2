@@ -29,17 +29,14 @@ public class LoginUserTests extends BaseTest {
         user.setEmail(faker.internet().safeEmailAddress())
                 .setPassword(faker.internet().password())
                 .setName(faker.name().username());
-        isUserCreated = false;
+        userSteps.createUser(user);
+        isUserCreated = true;
     }
 
-    // Вход под существующим пользователем
     @Test
     @DisplayName("Вход под существующим пользователем")
     public void shouldLoginExistingUserTest() {
-        userSteps
-                .createUser(user);
-        isUserCreated = true;
-        userSteps
+       userSteps
                 .loginUser(user)
                 .statusCode(SC_OK)
                 .body("refreshToken", Matchers.notNullValue());
@@ -48,10 +45,7 @@ public class LoginUserTests extends BaseTest {
     @Test
     @DisplayName("Вход с неверным email")
     public void shouldNotLoginUserWithWrongEmailTest() {
-        userSteps
-                .createUser(user);
-        isUserCreated = true;
-        User wrongEmailUser = new User()
+       User wrongEmailUser = new User()
                 .setEmail("1234")
                 .setPassword(user.getPassword());
         userSteps
@@ -63,9 +57,6 @@ public class LoginUserTests extends BaseTest {
     @Test
     @DisplayName("Вход с неверным паролем")
     public void shouldNotLoginWithWrongPasswordTest() {
-        userSteps
-                .createUser(user);
-        isUserCreated = true;
         User wrongPasswordUser = new User()
                 .setPassword("1234")
                 .setEmail(user.getEmail());

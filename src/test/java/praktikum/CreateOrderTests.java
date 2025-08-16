@@ -1,5 +1,6 @@
 package praktikum;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -31,7 +32,8 @@ public class CreateOrderTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("Создание заказа без авторизации (с ингредиентами)")
+    @DisplayName("Создание заказа без авторизации")
+    @Description("Создание заказа без авторизации с ингредиентами")
     public void shouldCreateOrderWithoutLoginTest() {
         String[] randomIngredients = orderSteps.getRandomIngredientIds(5);
         order.setIngredients(randomIngredients);
@@ -42,7 +44,8 @@ public class CreateOrderTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("Создание заказа с авторизацией (с игредиентами)")
+    @DisplayName("Создание заказа с авторизацией")
+    @Description("Создание заказа с авторизацией с игредиентами")
     public void shouldCreateOrderWithLoginTest() {
         user = new User()
                 .setEmail(faker.internet().safeEmailAddress())
@@ -65,6 +68,8 @@ public class CreateOrderTests extends BaseTest {
 
     @Test
     @DisplayName("Создание заказа без ингредиентов")
+    @Description("Создание заказа без авторизации и без ингредиентов")
+
     public void shouldNotCreateOrderWithoutIngredientsTest() {
         orderSteps
                 .createOrder(order)
@@ -75,6 +80,7 @@ public class CreateOrderTests extends BaseTest {
 
     @Test
     @DisplayName("Создание заказа с неверным хешем ингредиентов")
+    @Description("Создание заказа без авторизации с неверным хешем ингредиентов")
     public void shouldNotCreateOrderWithInvalidIngredientHashTest() {
         String[] wrongIngredients = {"invalid_hash_1", "invalid_hash_2"};
         order.setIngredients(wrongIngredients);
