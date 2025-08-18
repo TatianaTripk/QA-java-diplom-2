@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="praktikum.CreateOrderTests" time="20.107" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2\target\test-classes;C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2\target\classes;C:\Users\Admin\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Admin\.m2\repository\net\datafaker\datafaker\1.8.1\datafaker-1.8.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.26_4\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire14991414342787349240\surefirebooter-20250818170150242_3.jar C:\Users\Admin\AppData\Local\Temp\surefire14991414342787349240 2025-08-18T17-01-48_575-jvmRun1 surefire-20250818170150242_1tmp surefire_0-20250818170150242_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2\target\test-classes;C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2\target\classes;C:\Users\Admin\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Admin\.m2\repository\net\datafaker\datafaker\1.8.1\datafaker-1.8.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.26_4"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire14991414342787349240\surefirebooter-20250818170150242_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.26+4-LTS"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.26.4.1"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.26"/>
+    <property name="user.dir" value="C:\Users\Admin\IdeaProjects\Diplom\QA-java-diplom-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.26_4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Admin\bin;C:\Program Files\Amazon Corretto\jdk11.0.26_4\bin;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Admin\allure-2.34.1\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.26+4-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="shouldNotCreateOrderWithInvalidIngredientHashWithLoginTest" classname="praktikum.CreateOrderTests" time="12.279">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "antione.reilly@example.com",
+    "password": "w5k7l11925p",
+    "name": "cory.fay"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 373
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNCwiZXhwIjoxNzU1NTI2OTI0fQ.WcFoOdWP7AnAudfE3CxEvTTat8iDKx0bO2doOnuZQkA
+ETag: W/"175-e/UtGRS5bECRN+Y9vkp6v7xN8bw"
+
+{
+    "success": true,
+    "user": {
+        "email": "antione.reilly@example.com",
+        "name": "cory.fay"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNCwiZXhwIjoxNzU1NTI2OTI0fQ.WcFoOdWP7AnAudfE3CxEvTTat8iDKx0bO2doOnuZQkA",
+    "refreshToken": "877b87a7c20a1426d5935ac2c9f7a37fa63b18203d97c95441b9415ad9b4c7455ed03be1056f89c7"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "antione.reilly@example.com",
+    "password": "w5k7l11925p",
+    "name": "cory.fay"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 373
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"175-1X1fR+mGmdm+/h3s2CzWQXpviy0"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNCwiZXhwIjoxNzU1NTI2OTI0fQ.WcFoOdWP7AnAudfE3CxEvTTat8iDKx0bO2doOnuZQkA",
+    "refreshToken": "7bc2b9ed2eeaafdfde941594a7f16106d32c87c19d4f6ef29cf9ba100dc96c8010070d9333ab928e",
+    "user": {
+        "email": "antione.reilly@example.com",
+        "name": "cory.fay"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "invalid_hash_1",
+        "invalid_hash_2"
+    ],
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNCwiZXhwIjoxNzU1NTI2OTI0fQ.WcFoOdWP7AnAudfE3CxEvTTat8iDKx0bO2doOnuZQkA"
+}
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:07 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Internal Server Error</pre>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "antione.reilly@example.com",
+    "password": "w5k7l11925p",
+    "name": "cory.fay"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 373
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"175-NKNS6qLPr+mistUqNIesD/qE0qg"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNywiZXhwIjoxNzU1NTI2OTI3fQ.B4uOwRTYP_F5nBfQwxivQenBmpCXYraFYOQ6ewCujXM",
+    "refreshToken": "29476a806e9bac256c5c498cfefedf9fb8e040f1ce65e04ca62eb8ac21821d420b590e67a96a36c5",
+    "user": {
+        "email": "antione.reilly@example.com",
+        "name": "cory.fay"
+    }
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjVjOWVkMjgwMDAxYjY4MDhjYSIsImlhdCI6MTc1NTUyNTcyNywiZXhwIjoxNzU1NTI2OTI3fQ.B4uOwRTYP_F5nBfQwxivQenBmpCXYraFYOQ6ewCujXM
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldCreateOrderWithLoginTest" classname="praktikum.CreateOrderTests" time="3.28">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTcyOSwiZXhwIjoxNzU1NTI2OTI5fQ.qkUACuIdGgIxGS7VhrwZCDT1x46LIQ0YO6Kb_2DrAAg
+ETag: W/"17e-uzzYDQl2vyO0XxsUh4GOVN/8egU"
+
+{
+    "success": true,
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTcyOSwiZXhwIjoxNzU1NTI2OTI5fQ.qkUACuIdGgIxGS7VhrwZCDT1x46LIQ0YO6Kb_2DrAAg",
+    "refreshToken": "2a29a0b65f65b48b51ce43f639c08b82ce24bdeba8a3074148c9ddf19055e7003a9da263894921db"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTcyOSwiZXhwIjoxNzU1NTI2OTI5fQ.qkUACuIdGgIxGS7VhrwZCDT1x46LIQ0YO6Kb_2DrAAg
+ETag: W/"17e-uzzYDQl2vyO0XxsUh4GOVN/8egU"
+
+{
+    "success": true,
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTcyOSwiZXhwIjoxNzU1NTI2OTI5fQ.qkUACuIdGgIxGS7VhrwZCDT1x46LIQ0YO6Kb_2DrAAg",
+    "refreshToken": "2a29a0b65f65b48b51ce43f639c08b82ce24bdeba8a3074148c9ddf19055e7003a9da263894921db"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"17e-UBPAGiuNWDoEE9oGcITYIJzzbq4"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMCwiZXhwIjoxNzU1NTI2OTMwfQ.GfrPWM3qyGBjXcnZrqJFUj0xYsMi5x1ZFRv9WcOF9ig",
+    "refreshToken": "e1fbd4b945e7876d4f737b34ed24c548bd81f7f25d4346cdfcf961a39b0802bfbff04dce7997126c",
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"17e-UBPAGiuNWDoEE9oGcITYIJzzbq4"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMCwiZXhwIjoxNzU1NTI2OTMwfQ.GfrPWM3qyGBjXcnZrqJFUj0xYsMi5x1ZFRv9WcOF9ig",
+    "refreshToken": "e1fbd4b945e7876d4f737b34ed24c548bd81f7f25d4346cdfcf961a39b0802bfbff04dce7997126c",
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    }
+}
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 5957
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 5957
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa70",
+        "61c0c5a71d1f82001bdaaa70",
+        "61c0c5a71d1f82001bdaaa6c"
+    ],
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMCwiZXhwIjoxNzU1NTI2OTMwfQ.GfrPWM3qyGBjXcnZrqJFUj0xYsMi5x1ZFRv9WcOF9ig"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa70",
+        "61c0c5a71d1f82001bdaaa70",
+        "61c0c5a71d1f82001bdaaa6c"
+    ],
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMCwiZXhwIjoxNzU1NTI2OTMwfQ.GfrPWM3qyGBjXcnZrqJFUj0xYsMi5x1ZFRv9WcOF9ig"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 104
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"68-MKOYVUI4n5A7avPeA70ophRI3xc"
+
+{
+    "success": true,
+    "name": "Метеоритный краторный бургер",
+    "order": {
+        "number": 4153
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 104
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"68-MKOYVUI4n5A7avPeA70ophRI3xc"
+
+{
+    "success": true,
+    "name": "Метеоритный краторный бургер",
+    "order": {
+        "number": 4153
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "adolfo.wilderman@example.com",
+    "password": "1bek572f1s",
+    "name": "danuta.predovic"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"17e-Znec9ozZC3pKs5w1azjonvmdqts"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMSwiZXhwIjoxNzU1NTI2OTMxfQ.DOjXrpBtvlGfobAbwhfo8DAUXIBLeTGu1je1g3XYSDI",
+    "refreshToken": "f566fbc956e402c3c2f20899e638daf663ba11ed345a370c0232f35d1018e9f4b4a6a0f5f2dc9f2a",
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"17e-Znec9ozZC3pKs5w1azjonvmdqts"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMSwiZXhwIjoxNzU1NTI2OTMxfQ.DOjXrpBtvlGfobAbwhfo8DAUXIBLeTGu1je1g3XYSDI",
+    "refreshToken": "f566fbc956e402c3c2f20899e638daf663ba11ed345a370c0232f35d1018e9f4b4a6a0f5f2dc9f2a",
+    "user": {
+        "email": "adolfo.wilderman@example.com",
+        "name": "danuta.predovic"
+    }
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMSwiZXhwIjoxNzU1NTI2OTMxfQ.DOjXrpBtvlGfobAbwhfo8DAUXIBLeTGu1je1g3XYSDI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjYxOWVkMjgwMDAxYjY4MDhjZSIsImlhdCI6MTc1NTUyNTczMSwiZXhwIjoxNzU1NTI2OTMxfQ.DOjXrpBtvlGfobAbwhfo8DAUXIBLeTGu1je1g3XYSDI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldNotCreateOrderWithoutLoginTest" classname="praktikum.CreateOrderTests" time="0.834">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;401&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <401> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at praktikum.CreateOrderTests.shouldNotCreateOrderWithoutLoginTest(CreateOrderTests.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 5957
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 5957
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 5957
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa71",
+        "61c0c5a71d1f82001bdaaa70"
+    ],
+    "accessToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa71",
+        "61c0c5a71d1f82001bdaaa70"
+    ],
+    "accessToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa71",
+        "61c0c5a71d1f82001bdaaa70"
+    ],
+    "accessToken": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 115
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"73-7WmZgymbYAoKSPMZHwMLvUPMjBY"
+
+{
+    "success": true,
+    "name": "Био-марсианский метеоритный бургер",
+    "order": {
+        "number": 6275
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 115
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"73-7WmZgymbYAoKSPMZHwMLvUPMjBY"
+
+{
+    "success": true,
+    "name": "Био-марсианский метеоритный бургер",
+    "order": {
+        "number": 6275
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 115
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"73-7WmZgymbYAoKSPMZHwMLvUPMjBY"
+
+{
+    "success": true,
+    "name": "Био-марсианский метеоритный бургер",
+    "order": {
+        "number": 6275
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldNotCreateOrderWithoutIngredientsWithLoginTest" classname="praktikum.CreateOrderTests" time="2.518">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8
+ETag: W/"179-jitJyVhr1nY3h8CeeQZpll9YDRI"
+
+{
+    "success": true,
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8",
+    "refreshToken": "5a21f437c896a48ca3228e03308624f137a6e197bf5e70efe73f6ea03ca86a3ab6242ccc46cec055"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8
+ETag: W/"179-jitJyVhr1nY3h8CeeQZpll9YDRI"
+
+{
+    "success": true,
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8",
+    "refreshToken": "5a21f437c896a48ca3228e03308624f137a6e197bf5e70efe73f6ea03ca86a3ab6242ccc46cec055"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8
+ETag: W/"179-jitJyVhr1nY3h8CeeQZpll9YDRI"
+
+{
+    "success": true,
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8",
+    "refreshToken": "5a21f437c896a48ca3228e03308624f137a6e197bf5e70efe73f6ea03ca86a3ab6242ccc46cec055"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8
+ETag: W/"179-jitJyVhr1nY3h8CeeQZpll9YDRI"
+
+{
+    "success": true,
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczMywiZXhwIjoxNzU1NTI2OTMzfQ.TwSyalXAmmV7DPeTUbgP66GGmxL4G4TqKBzfNdRRDf8",
+    "refreshToken": "5a21f437c896a48ca3228e03308624f137a6e197bf5e70efe73f6ea03ca86a3ab6242ccc46cec055"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-R6FsRyybo5AgZAckzHn8fznStJ8"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk",
+    "refreshToken": "f001c02156bf8bca1cc98b14186c676255116de5de50f14aa8d03b40a56c978d724fcdb83ced680e",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-R6FsRyybo5AgZAckzHn8fznStJ8"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk",
+    "refreshToken": "f001c02156bf8bca1cc98b14186c676255116de5de50f14aa8d03b40a56c978d724fcdb83ced680e",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-R6FsRyybo5AgZAckzHn8fznStJ8"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk",
+    "refreshToken": "f001c02156bf8bca1cc98b14186c676255116de5de50f14aa8d03b40a56c978d724fcdb83ced680e",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-R6FsRyybo5AgZAckzHn8fznStJ8"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk",
+    "refreshToken": "f001c02156bf8bca1cc98b14186c676255116de5de50f14aa8d03b40a56c978d724fcdb83ced680e",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": null,
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": null,
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": null,
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": null,
+    "accessToken": "Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNCwiZXhwIjoxNzU1NTI2OTM0fQ.ZTinpf_DWLlDKKt2rr_xvRBOXWDP5KDARIOgFlsR6Jk"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+
+{
+    "success": false,
+    "message": "Ingredient ids must be provided"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+
+{
+    "success": false,
+    "message": "Ingredient ids must be provided"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+
+{
+    "success": false,
+    "message": "Ingredient ids must be provided"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+
+{
+    "success": false,
+    "message": "Ingredient ids must be provided"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "tawna.bogisich@example.com",
+    "password": "5ji849m7",
+    "name": "clair.walter"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-pcidJSbixGeYUNrbvZXKgArWvaQ"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY",
+    "refreshToken": "812fec10950820daaad24f4164a23d560de8a878eadb096e0b4fecd6cd8d11f512bee13900a8266d",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-pcidJSbixGeYUNrbvZXKgArWvaQ"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY",
+    "refreshToken": "812fec10950820daaad24f4164a23d560de8a878eadb096e0b4fecd6cd8d11f512bee13900a8266d",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-pcidJSbixGeYUNrbvZXKgArWvaQ"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY",
+    "refreshToken": "812fec10950820daaad24f4164a23d560de8a878eadb096e0b4fecd6cd8d11f512bee13900a8266d",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 377
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"179-pcidJSbixGeYUNrbvZXKgArWvaQ"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY",
+    "refreshToken": "812fec10950820daaad24f4164a23d560de8a878eadb096e0b4fecd6cd8d11f512bee13900a8266d",
+    "user": {
+        "email": "tawna.bogisich@example.com",
+        "name": "clair.walter"
+    }
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YTMzMjY1OWVkMjgwMDAxYjY4MDhkMiIsImlhdCI6MTc1NTUyNTczNSwiZXhwIjoxNzU1NTI2OTM1fQ.s-GZn7NdHmRCYGhAd80Np2eD31nelvdzDWR9O3-0wGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Aug 2025 14:02:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
