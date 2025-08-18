@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class UserSteps {
 
-    @Step
+    @Step("Создание пользователя")
     public ValidatableResponse createUser(User user) {
         return given()
                 .body(user)
@@ -18,7 +18,7 @@ public class UserSteps {
                 .then();
     }
 
-    @Step
+    @Step("Авторизация пользователя")
     public ValidatableResponse loginUser(User user) {
         return given()
                 .body(user)
@@ -27,7 +27,7 @@ public class UserSteps {
                 .then();
     }
 
-    @Step
+    @Step("Удаление пользователя")
     public void deleteUser(User user) {
         given()
                 .header("Authorization", user.getToken())

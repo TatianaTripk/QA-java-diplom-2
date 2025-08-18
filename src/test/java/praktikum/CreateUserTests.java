@@ -55,7 +55,7 @@ public class CreateUserTests extends BaseTest {
                 .statusCode(SC_FORBIDDEN)
                 .body("success", Matchers.is(false))
                 .body("message", Matchers.equalTo("User already exists"));
-        isUserCreated = false;
+        isUserCreated = true;
     }
 
     @Test

@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.given;
 public class OrderSteps {
     private static final Random random = new Random();
 
-    @Step
+    @Step("Создание заказа")
     public ValidatableResponse createOrder(Order order) {
         return given()
                 .body(order)
@@ -22,7 +22,7 @@ public class OrderSteps {
                 .then();
     }
 
-    @Step
+    @Step("Получение случайных идентификаторов ингредиентов")
     public String[] getRandomIngredientIds(int maxCount) {
         List<String> allIngredients = given()
                 .get(RestConfig.GET_INGREDIENTS)

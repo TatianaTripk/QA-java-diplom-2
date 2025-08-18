@@ -9,7 +9,9 @@ import net.datafaker.Faker;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import praktikum.model.Order;
 import praktikum.model.User;
 import praktikum.steps.OrderSteps;
@@ -25,16 +27,44 @@ public class CreateOrderTests extends BaseTest {
     private boolean isUserCreated = false;
     Faker faker = new Faker();
 
+    @Rule
+    public TestName testName = new TestName();
+
     @Before
     public void setUp() {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
         order = new Order();
+        if (testName.getMethodName().contains("WithLogin")) {
+            user = new User()
+                    .setEmail(faker.internet().safeEmailAddress())
+                    .setPassword(faker.internet().password())
+                    .setName(faker.name().username());
+
+                    userSteps.createUser(user);
+                    isUserCreated = true;
+                    String accessToken = userSteps.loginUser(user)
+                            .extract()
+                            .path("accessToken");
+                    order.setAccessToken("Bearer " + accessToken);
+        }
     }
 
     @Test
     @DisplayName("Создание заказа без авторизации")
     @Description("Создание заказа без авторизации с ингредиентами")
-    public void shouldCreateOrderWithoutLoginTest() {
+    public void shouldNotCreateOrderWithoutLoginTest() {
+        String[] randomIngredients = orderSteps.getRandomIngredientIds(5);
+        order.setIngredients(randomIngredients);
+        orderSteps
+                .createOrder(order)
+                .statusCode(SC_UNAUTHORIZED)
+                .body("success", Matchers.is(false));
+    }
+
+    @Test
+    @DisplayName("Создание заказа с авторизацией")
+    @Description("Создание заказа с авторизацией с игредиентами")
+    public void shouldCreateOrderWithLoginTest() {
         String[] randomIngredients = orderSteps.getRandomIngredientIds(5);
         order.setIngredients(randomIngredients);
         orderSteps
@@ -44,33 +74,9 @@ public class CreateOrderTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("Создание заказа с авторизацией")
-    @Description("Создание заказа с авторизацией с игредиентами")
-    public void shouldCreateOrderWithLoginTest() {
-        user = new User()
-                .setEmail(faker.internet().safeEmailAddress())
-                .setPassword(faker.internet().password())
-                .setName(faker.name().username());
-        userSteps
-                .createUser(user);
-        isUserCreated = true;
-        String accessToken = userSteps.loginUser(user)
-                .extract()
-                .path("accessToken");
-        String[] randomIngredients = orderSteps.getRandomIngredientIds(5);
-        order.setIngredients(randomIngredients)
-                .setAccessToken("Bearer " + accessToken);
-        orderSteps
-                .createOrder(order)
-                .statusCode(SC_OK)
-                .body("success", Matchers.is(true));
-    }
-
-    @Test
     @DisplayName("Создание заказа без ингредиентов")
-    @Description("Создание заказа без авторизации и без ингредиентов")
-
-    public void shouldNotCreateOrderWithoutIngredientsTest() {
+    @Description("Создание заказа с авторизацией и без ингредиентов")
+    public void shouldNotCreateOrderWithoutIngredientsWithLoginTest() {
         orderSteps
                 .createOrder(order)
                 .statusCode(SC_BAD_REQUEST)
@@ -80,8 +86,8 @@ public class CreateOrderTests extends BaseTest {
 
     @Test
     @DisplayName("Создание заказа с неверным хешем ингредиентов")
-    @Description("Создание заказа без авторизации с неверным хешем ингредиентов")
-    public void shouldNotCreateOrderWithInvalidIngredientHashTest() {
+    @Description("Создание заказа с авторизацией с неверным хешем ингредиентов")
+    public void shouldNotCreateOrderWithInvalidIngredientHashWithLoginTest() {
         String[] wrongIngredients = {"invalid_hash_1", "invalid_hash_2"};
         order.setIngredients(wrongIngredients);
         orderSteps
